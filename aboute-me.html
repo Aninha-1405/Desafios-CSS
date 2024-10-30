@@ -5,90 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-header {
-    background: #6c63ff;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        header {
+            background: #6c63ff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-header h1 {
-    margin-bottom: 15px;
-}
+        header h1 {
+            margin-bottom: 15px;
+        }
 
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 20px;
+        }
 
+        .presentation,
+        .lead-form,
+        .catalog {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; 
+            max-width: 600px; 
+        }
 
-main {
-    padding: 20px;
-}
+        .presentation img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
 
-.presentation,
-.lead-form,
-.catalog {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        h2 {
+            color: #6c63ff;
+            margin-bottom: 10px;
+        }
 
-.presentation img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-h2 {
-    color: #6c63ff;
-    margin-bottom: 10px;
-}
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+        button {
+            padding: 10px;
+            background: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+        button:hover {
+            background: #5755e0;
+        }
 
-button {
-    padding: 10px;
-    background: #6c63ff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+        .catalog ul {
+            list-style-type: none;
+        }
 
-button:hover {
-    background: #5755e0;
-}
-
-.catalog ul {
-    list-style-type: none;
-}
-
-.catalog li {
-    padding: 5px 0;
-}
+        .catalog li {
+            padding: 5px 0;
+        }
     </style>
     <title>Página</title>
     <link rel="stylesheet" href="styles.css">
