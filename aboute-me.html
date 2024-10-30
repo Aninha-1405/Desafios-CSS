@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  . {
+    <style>
+        * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,71 +13,88 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #f5f5f5;
-    text-align: center;
+    background: #6c63ff;
+    color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
-.gatinhofofo {
-    margin: 10px 0;
+header h1 {
+    margin-bottom: 15px;
 }
 
 .gatinhofofo img {
-    width: 100px; /* ajuste conforme necessário */
+    max-width: 150px;
     border-radius: 50%;
 }
 
+/* Estilização das seções */
 main {
     padding: 20px;
 }
 
+.presentation,
+.lead-form,
+.catalog {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .presentation img {
     max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 h2 {
-    margin: 20px 0 10px;
+    color: #6c63ff;
+    margin-bottom: 10px;
 }
 
-.lead-form, .catalog {
-    margin-top: 30px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 10px;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 button {
-    background-color: #007bff;
+    padding: 10px;
+    background: #6c63ff;
     color: white;
-    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #5755e0;
 }
 
-ul {
+/* Estilização da lista de serviços */
+.catalog ul {
     list-style-type: none;
-    padding-left: 0;
 }
 
-li {
-    margin: 5px 0;
+.catalog li {
+    padding: 5px 0;
 }
-</style>
+    </style>
     <title>Página</title>
     <link rel="stylesheet" href="styles.css">
 </head>
